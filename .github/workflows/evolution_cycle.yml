@@ -1,0 +1,12 @@
+name: Solace Evolution Cycle Workflow
+
+events:
+  workflow_dispatch:
+
+  jobs:
+
+    - name: Run Self-Refining AI Model
+      run: python3 -m self_evolving_ai.py
+
+      - name: Check for intelligence updates
+      run: python3 -m check_status.by
